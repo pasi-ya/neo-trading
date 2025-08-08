@@ -1,0 +1,36 @@
+name: neo_trading
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: ^3.8.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  flutter_pdfview: ^1.4.1+1
+  http: ^1.5.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_native_splash:
+
+flutter:
+  uses-material-design: true
+  assets:
+    - lib/assets/images/logo.png
+    - lib/assets/images/hammer.png
+
+
+# flutter_native_splash configuration
+flutter_native_splash:
+  color: "#0D1117"          # background color (app theme dark)
+  image: assets/images/logo.png
+  android: true
+  ios: true
+  android_gravity: center
+  ios_content_mode: center
+  fill: true
