@@ -11,8 +11,9 @@ class PatternsScreen extends StatefulWidget {
 
 class _PatternsScreenState extends State<PatternsScreen> {
   // Replace with your actual GitHub repo raw URL
-  final String baseUrl =
-    "https://raw.githubusercontent.com/pasi-ya/neo-trading/main/lib/assets/patterns";
+  final String 
+  hammerPdfUrl = "https://raw.githubusercontent.com/pasi-ya/neo-trading/main/lib/assets/patterns/bullish/hammer.pdf";
+
 
   final List<Map<String, String>> bullishPatterns = [
     {"name": "Hammer", "file": "lib/assets/patterns/bearish/hammer.pdf"},
