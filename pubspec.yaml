@@ -24,6 +24,7 @@ flutter:
   assets:
     - lib/assets/images/logo.png
     - lib/assets/images/hammer.png
+    - lib/assets/patterns/bearish/hammer.pdf
 
 
 # flutter_native_splash configuration
