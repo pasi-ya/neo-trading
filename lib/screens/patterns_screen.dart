@@ -11,12 +11,14 @@ class PatternsScreen extends StatefulWidget {
 
 class _PatternsScreenState extends State<PatternsScreen> {
   // Replace with your actual GitHub repo raw URL
-  final String 
-  hammerPdfUrl = "https://raw.githubusercontent.com/pasi-ya/neo-trading/main/lib/assets/patterns/bullish/hammer.pdf";
+  final String baseUrl =
+      "https://raw.githubusercontent.com/pasi-ya/neo-trading/main/lib/assets/patterns";
+      //https://raw.githubusercontent.com/pasi-ya/neo-trading/main/lib/assets/patterns/bearish/hammer.pdf
+
 
 
   final List<Map<String, String>> bullishPatterns = [
-    {"name": "Hammer", "file": "lib/assets/patterns/bearish/hammer.pdf"},
+    {"name": "Hammer", "file": "bullish/hammer.pdf"},
     {"name": "Morning Star", "file": "bullish/morning_star.pdf"},
   ];
 
@@ -104,49 +106,6 @@ class _PatternsScreenState extends State<PatternsScreen> {
                 "Bearish Patterns", bearishPatterns, const Color(0xFFFF4C4C)),
           ],
         ),
-      ),
-    );
-  }
-}
-
-
-class FavoritesScreen extends StatelessWidget {
-  const FavoritesScreen({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return const Scaffold(
-      backgroundColor: Color(0xFF0D1117),
-      body: Center(
-        child: Text('Patterns Screen', style: TextStyle(color: Colors.white)),
-      ),
-    );
-  }
-}
-
-class MoreScreen extends StatelessWidget {
-  const MoreScreen({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return const Scaffold(
-      backgroundColor: Color(0xFF0D1117),
-      body: Center(
-        child: Text('Patterns Screen', style: TextStyle(color: Colors.white)),
-      ),
-    );
-  }
-}
-
-class QuizScreen extends StatelessWidget {
-  const QuizScreen({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return const Scaffold(
-      backgroundColor: Color(0xFF0D1117),
-      body: Center(
-        child: Text('Patterns Screen', style: TextStyle(color: Colors.white)),
       ),
     );
   }

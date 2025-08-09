@@ -16,9 +16,6 @@ class _HomeScreenState extends State<HomeScreen> {
   final List<Widget> _pages = [
     const _HomeContent(),
     const PatternsScreen(),
-    const QuizScreen(),
-    const FavoritesScreen(),
-    const MoreScreen(),
   ];
 
   void _onItemTapped(int index) {
